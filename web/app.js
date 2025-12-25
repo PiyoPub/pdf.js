@@ -2434,15 +2434,15 @@ if (typeof PDFJSDev === "undefined" || PDFJSDev.test("GENERIC")) {
     if (fileOrigin === viewerOrigin) {
       return;
     }
-    const ex = new Error("file origin does not match viewer's");
+    // const ex = new Error("file origin does not match viewer's");
 
-    PDFViewerApplication._documentError("pdfjs-loading-error", {
-      message: ex.message,
-    });
+    // PDFViewerApplication._documentError("pdfjs-loading-error", {
+    //  message: ex.message,
+    //});
     // Removing of the following line will not guarantee that the viewer will
     // start accepting URLs from foreign origin -- CORS headers on the remote
     // server must be properly configured.
-    throw ex;
+    // throw ex;
   };
 
   // eslint-disable-next-line no-var
